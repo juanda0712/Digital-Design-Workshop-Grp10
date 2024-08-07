@@ -1,0 +1,87 @@
+|sumador4bits
+iA[0] => sumador1:Sumador_0.A
+iA[1] => sumador1:Sumador_1.A
+iA[2] => sumador1:Sumador_2.A
+iA[3] => sumador1:Sumador_3.A
+iB[0] => sumador1:Sumador_0.B
+iB[1] => sumador1:Sumador_1.B
+iB[2] => sumador1:Sumador_2.B
+iB[3] => sumador1:Sumador_3.B
+iCin => ~NO_FANOUT~
+Cout << sumador1:Sumador_3.Cout
+oSum[0] << sumador1:Sumador_0.Sum
+oSum[1] << sumador1:Sumador_1.Sum
+oSum[2] << sumador1:Sumador_2.Sum
+oSum[3] << sumador1:Sumador_3.Sum
+salida7seg0[0] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+salida7seg0[1] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+salida7seg0[2] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+salida7seg0[3] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+salida7seg0[4] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salida7seg0[5] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salida7seg0[6] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+salida7seg1[0] << sumador1:Sumador_3.Cout
+salida7seg1[1] << <GND>
+salida7seg1[2] << <GND>
+salida7seg1[3] << sumador1:Sumador_3.Cout
+salida7seg1[4] << sumador1:Sumador_3.Cout
+salida7seg1[5] << sumador1:Sumador_3.Cout
+salida7seg1[6] << <VCC>
+
+
+|sumador4bits|sumador1:Sumador_0
+A => Sum.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador4bits|sumador1:Sumador_1
+A => Sum.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador4bits|sumador1:Sumador_2
+A => Sum.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador4bits|sumador1:Sumador_3
+A => Sum.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
