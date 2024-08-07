@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/simulation/modelsim
+Esumador1
+Z1 w1722900708
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador1.vhd
+Z5 FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador1.vhd
+l0
+L4 1
+Vhm]l0LdO6lMBXDND49PWU0
+!s100 E]><hOSP2KhfEU3cdio0L0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1723072119
+!i10b 1
+Z8 !s108 1723072119.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador1.vhd|
+Z10 !s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador1.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 8 sumador1 0 22 hm]l0LdO6lMBXDND49PWU0
+!i122 0
+l14
+L12 8
+VGJ[F7aD8HG>GAdaG_1znQ1
+!s100 KM0=VlBCo8EXX6V_;CJjn2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esumador4bits
+Z13 w1723072071
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits.vhd
+Z15 FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits.vhd
+l0
+L4 1
+V2`]ZC[kJc5LH;C0=J_cRi1
+!s100 PODSFP4_WRF4Ci1fC<nl40
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits.vhd|
+Z17 !s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 12 sumador4bits 0 22 2`]ZC[kJc5LH;C0=J_cRi1
+!i122 1
+l30
+L15 55
+VeMkV<9k_4aLhORW1=jSbR0
+!s100 li?NhXbFYWHA?Clg57h^Y3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Esumador4bits_tb
+Z18 w1722902205
+R2
+R3
+!i122 2
+R0
+Z19 8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits_tb.vhd
+Z20 FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits_tb.vhd
+l0
+L5 1
+VPUXK9JECJgR?[ZMNjjLHE2
+!s100 _iH^^h19HaX5XQALoGQmF0
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits_tb.vhd|
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits_tb.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 15 sumador4bits_tb 0 22 PUXK9JECJgR?[ZMNjjLHE2
+!i122 2
+l36
+L8 66
+VX:d@BXT6zh_08<TIn[e>U0
+!s100 d=eRhk1PYZe1jc:F>lc8Z3
+R6
+31
+R7
+!i10b 1
+R8
+R21
+Z22 !s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits_tb.vhd|
+!i113 1
+R11
+R12

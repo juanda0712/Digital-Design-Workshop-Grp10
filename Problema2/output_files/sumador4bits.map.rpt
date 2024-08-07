@@ -1,5 +1,5 @@
 Analysis & Elaboration report for sumador4bits
-Wed Aug  7 16:55:49 2024
+Wed Aug  7 17:08:08 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Aug  7 16:55:49 2024          ;
+; Analysis & Elaboration Status ; Successful - Wed Aug  7 17:08:08 2024          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; sumador4bits                                   ;
 ; Top-level Entity Name         ; sumador4bits                                   ;
@@ -171,7 +171,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed Aug  7 16:55:31 2024
+    Info: Processing started: Wed Aug  7 17:07:54 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sumador4bits -c sumador4bits --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -188,8 +188,8 @@ Info (12127): Elaborating entity "sumador4bits" for the top level hierarchy
 Info (12128): Elaborating entity "sumador1" for hierarchy "sumador1:Sumador_0" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Problema2/sumador4bits.vhd Line: 32
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Wed Aug  7 16:55:49 2024
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Processing ended: Wed Aug  7 17:08:08 2024
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:26
 
 

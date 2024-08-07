@@ -59,7 +59,7 @@ begin
 					when "1101" => salida7seg0 <= "0100001"; -- Hex D
 					when "1110" => salida7seg0 <= "0000110"; -- Hex E
 					when "1111" => salida7seg0 <= "0001110"; -- Hex F
-		
+					when others => salida7seg0 <= "1111111"; -- Maneja cualquier otro caso
 			end case;
 			
 		oSum <= result;

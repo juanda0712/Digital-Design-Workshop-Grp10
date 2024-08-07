@@ -1,5 +1,5 @@
 Flow report for sumador4bits
-Wed Aug  7 16:55:49 2024
+Wed Aug  7 17:08:08 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Wed Aug  7 16:55:49 2024          ;
+; Flow Status                 ; Successful - Wed Aug  7 17:08:08 2024          ;
 ; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name               ; sumador4bits                                   ;
 ; Top-level Entity Name       ; sumador4bits                                   ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/07/2024 16:55:32 ;
+; Start date & time ; 08/07/2024 17:07:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sumador4bits        ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 35490519664246.172307133106572         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 35490519664246.172307207505944         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; sumador4bits_tb                   ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -104,8 +104,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:18     ; 1.0                     ; 4845 MB             ; 00:00:31                           ;
-; Total                  ; 00:00:18     ; --                      ; --                  ; 00:00:31                           ;
+; Analysis & Elaboration ; 00:00:14     ; 1.0                     ; 4845 MB             ; 00:00:26                           ;
+; Total                  ; 00:00:14     ; --                      ; --                  ; 00:00:26                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
