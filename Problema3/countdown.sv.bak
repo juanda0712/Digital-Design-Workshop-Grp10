@@ -1,0 +1,9 @@
+module countdown(input logic b, s,
+					output logic [6: 0] d0, d1);
+	
+	logic [5: 0]num = 111111;
+	
+	always_comb
+	
+	
+endmodule
