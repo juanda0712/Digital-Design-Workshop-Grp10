@@ -1,0 +1,64 @@
+|decoder
+binary[0] => Div0.IN7
+binary[0] => Mod0.IN7
+binary[1] => Div0.IN6
+binary[1] => Mod0.IN6
+binary[2] => Div0.IN5
+binary[2] => Mod0.IN5
+binary[3] => Div0.IN4
+binary[3] => Mod0.IN4
+tens[0] <= tens[0].DB_MAX_OUTPUT_PORT_TYPE
+tens[1] <= tens[1].DB_MAX_OUTPUT_PORT_TYPE
+tens[2] <= tens[2].DB_MAX_OUTPUT_PORT_TYPE
+tens[3] <= tens[3].DB_MAX_OUTPUT_PORT_TYPE
+units[0] <= units[0].DB_MAX_OUTPUT_PORT_TYPE
+units[1] <= units[1].DB_MAX_OUTPUT_PORT_TYPE
+units[2] <= units[2].DB_MAX_OUTPUT_PORT_TYPE
+units[3] <= units[3].DB_MAX_OUTPUT_PORT_TYPE
+seg0[0] <= decoderFPGA:decoderFPGA_inst.seg0
+seg0[1] <= decoderFPGA:decoderFPGA_inst.seg0
+seg0[2] <= decoderFPGA:decoderFPGA_inst.seg0
+seg0[3] <= decoderFPGA:decoderFPGA_inst.seg0
+seg0[4] <= decoderFPGA:decoderFPGA_inst.seg0
+seg0[5] <= decoderFPGA:decoderFPGA_inst.seg0
+seg0[6] <= decoderFPGA:decoderFPGA_inst.seg0
+seg1[0] <= decoderFPGA:decoderFPGA_inst.seg1
+seg1[1] <= decoderFPGA:decoderFPGA_inst.seg1
+seg1[2] <= decoderFPGA:decoderFPGA_inst.seg1
+seg1[3] <= decoderFPGA:decoderFPGA_inst.seg1
+seg1[4] <= decoderFPGA:decoderFPGA_inst.seg1
+seg1[5] <= decoderFPGA:decoderFPGA_inst.seg1
+seg1[6] <= decoderFPGA:decoderFPGA_inst.seg1
+
+
+|decoder|decoderFPGA:decoderFPGA_inst
+tens[0] => Decoder1.IN3
+tens[1] => Decoder0.IN2
+tens[1] => Decoder1.IN2
+tens[2] => Decoder0.IN1
+tens[2] => Decoder1.IN1
+tens[3] => Decoder0.IN0
+tens[3] => Decoder1.IN0
+units[0] => Decoder3.IN3
+units[1] => Decoder2.IN2
+units[1] => Decoder3.IN2
+units[2] => Decoder2.IN1
+units[2] => Decoder3.IN1
+units[3] => Decoder2.IN0
+units[3] => Decoder3.IN0
+seg0[0] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+seg0[1] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+seg0[2] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+seg0[3] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+seg0[4] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+seg0[5] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+seg0[6] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+seg1[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg1[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg1[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg1[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg1[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg1[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg1[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

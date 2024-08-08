@@ -1,0 +1,22 @@
+C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoderFPGA.sv {1 {vlog -work decoder -sv -stats=none C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoderFPGA.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module decoderFPGA
+
+Top level modules:
+	decoderFPGA
+
+} {} {}} C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder.sv {1 {vlog -work decoder -sv -stats=none C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv {1 {vlog -work decoder -sv -stats=none C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module decoder_tb
+
+Top level modules:
+	decoder_tb
+
+} {} {}}
