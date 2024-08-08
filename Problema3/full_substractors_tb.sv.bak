@@ -1,0 +1,66 @@
+module full_substractors_tb();
+	logic [1 :0]a2, b2, y2;
+	logic [3 :0]a4, b4, y4;
+	logic [5 :0]a6, b2, y6;
+	
+	full_substractor_n_bits #(2) sub2(a, b, y);
+	
+	initial begin
+	a2 = 00; b2 = 00; #10;
+	assert (y2 === 00) else $error("000 failed.");
+	a2 = 01; #10;
+	assert (y2 === 01) else $error("010 failed.");
+	a2 = 01; b2 = 01; #10;
+	assert (y === 00) else $error("011 failed.");
+	a2 = 10; b2 = 00; c = 0; #10;
+	assert (y === 10) else $error("100 failed.");
+	a2 = 10; b2 = 01; #10;
+	assert (y === 01) else $error("101 failed.");
+	a2 = 10; b2 = 10; #10;
+	assert (y === 00) else $error("110 failed.");
+	a2 = 11; b2 = 00; #10;
+	assert (y === 11) else $error("111 failed.");
+	end
+	
+	/*full_substractor_n_bits #(4) sub4(a, b, y);
+	
+	initial begin
+	a = 0; b = 0; #10;
+	assert (y === 1) else $error("000 failed.");
+	c = 1; #10;
+	assert (y === 0) else $error("001 failed.");
+	b = 1; c = 0; #10;
+	assert (y === 0) else $error("010 failed.");
+	c = 1; #10;
+	assert (y === 0) else $error("011 failed.");
+	a = 1; b = 0; c = 0; #10;
+	assert (y === 1) else $error("100 failed.");
+	c = 1; #10;
+	assert (y === 1) else $error("101 failed.");
+	b = 1; c = 0; #10;
+	assert (y === 0) else $error("110 failed.");
+	c = 1; #10;
+	assert (y === 0) else $error("111 failed.");
+	end
+	
+	full_substractor_n_bits #(6) sub6(a, b, y);
+	
+	initial begin
+	a = 0; b = 0; #10;
+	assert (y === 1) else $error("000 failed.");
+	c = 1; #10;
+	assert (y === 0) else $error("001 failed.");
+	b = 1; c = 0; #10;
+	assert (y === 0) else $error("010 failed.");
+	c = 1; #10;
+	assert (y === 0) else $error("011 failed.");
+	a = 1; b = 0; c = 0; #10;
+	assert (y === 1) else $error("100 failed.");
+	c = 1; #10;
+	assert (y === 1) else $error("101 failed.");
+	b = 1; c = 0; #10;
+	assert (y === 0) else $error("110 failed.");
+	c = 1; #10;
+	assert (y === 0) else $error("111 failed.");
+	end */
+endmodule

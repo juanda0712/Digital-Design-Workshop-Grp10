@@ -1,0 +1,24 @@
+module sevenseg(input logic [5:0] data,
+					output logic [6:0] segments);
+	always_comb
+		case(data)
+							  // abc_defg
+			0000: segments = 7'b111_1110;
+			0001: segments = 7'b011_0000;
+			0010: segments = 7'b110_1101;
+			0011: segments = 7'b111_1001;
+			0100: segments = 7'b011_0011;
+			0101: segments = 7'b101_1011;
+			0110: segments = 7'b101_1111;
+			0111: segments = 7'b111_0000;
+			1000: segments = 7'b111_1111;
+			1001: segments = 7'b111_0011;
+			1010: segments = 7'b111_0111;//A
+			1011: segments = 7'b001_1111;//b
+			1100: segments = 7'b100_1110;//C
+			1101: segments = 7'b011_1101;//d
+			1110: segments = 7'b100_1111;//E
+			1111: segments = 7'b100_0111;//F
+		default: segments = 7'b000_0000;
+	endcase
+endmodule
