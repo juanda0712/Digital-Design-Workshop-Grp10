@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
-// DATE "08/07/2024 23:13:55"
+// DATE "08/08/2024 00:42:05"
 
 // 
 // Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -34,10 +34,10 @@ module countdown (
 	reset,
 	d0,
 	d1);
-input 	decrease;
-input 	reset;
-output 	[6:0] d0;
-output 	[6:0] d1;
+input 	logic decrease ;
+input 	logic reset ;
+output 	logic [6:0] d0 ;
+output 	logic [6:0] d1 ;
 
 // Design Ports Information
 // d0[0]	=>  Location: PIN_AH18,	 I/O Standard: 2.5 V,	 Current Strength: Default

@@ -53,7 +53,7 @@ module full_substractors_tb();
 	assert (y4 === 0000);
 	end
 	
-	full_substractor_n_bits #(6) sub6(a, b, y);
+	full_substractor_n_bits #(6) sub6(a6, b6, y6);
 	
 	initial begin
 	a6 = 000000; b6 = 000000; #10;

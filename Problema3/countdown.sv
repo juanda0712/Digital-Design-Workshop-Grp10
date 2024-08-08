@@ -1,7 +1,7 @@
 module countdown(input logic decrease, reset,
 					output logic [6: 0] d0, d1);
 	
-	logic [5: 0] count;
+	logic [5: 0] count, res;
 	full_substractor_n_bits #(6) sub6bits(count, 6'b000001, res);
 	
 	always_ff @(posedge decrease or posedge reset) begin
