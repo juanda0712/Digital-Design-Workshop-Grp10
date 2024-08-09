@@ -1,0 +1,87 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/ModelSim
+vdecoder
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1723090766
+!i10b 1
+!s100 U9Fh;g0[]D6I>OY]E]HnI0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<;YYR@6WXiIfNcWW<5`D=2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/testbench
+w1723088802
+8C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder.sv
+FC:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder.sv
+!i122 0
+L0 1 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1723090766.000000
+!s107 C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder.sv|
+!s90 -reportprogress|300|-work|decoder|-sv|-stats=none|C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder.sv|
+!i113 1
+Z7 o-work decoder -sv
+Z8 tCvgOpt 0
+vdecoder_tb
+R0
+R1
+!i10b 1
+!s100 eno?ib8gX^SQcm<YGRXmL1
+R2
+IboLC;]T=WE94WEI1IhcA;2
+R3
+S1
+R4
+w1723090014
+8C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv
+FC:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv
+!i122 1
+L0 1 57
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv|
+!s90 -reportprogress|300|-work|decoder|-sv|-stats=none|C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv|
+!i113 1
+R7
+R8
+vdecoderFPGA
+R0
+R1
+!i10b 1
+!s100 iVWI4LzCf@4EJJlKY3?Ao3
+R2
+In]4n>Yjd8Y_I;lHJQ]Ez^2
+R3
+S1
+R4
+w1723088806
+8C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoderFPGA.sv
+FC:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoderFPGA.sv
+!i122 2
+L0 1 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoderFPGA.sv|
+!s90 -reportprogress|300|-work|decoder|-sv|-stats=none|C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoderFPGA.sv|
+!i113 1
+R7
+R8
+ndecoder@f@p@g@a
