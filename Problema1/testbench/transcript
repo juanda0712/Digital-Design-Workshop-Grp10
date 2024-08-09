@@ -1,0 +1,43 @@
+# Compile of decoder.sv was successful.
+# Compile of decoder_tb.sv was successful.
+# Compile of decoderFPGA.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui decoder.decoder_tb
+# vsim -gui decoder.decoder_tb 
+# Start time: 22:19:54 on Aug 07,2024
+# Loading sv_std.std
+# Loading decoder.decoder_tb
+# Loading decoder.decoder
+# Loading decoder.decoderFPGA
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_tb/uut File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv Line: 10
+# ** Warning: (vsim-3722) C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv(10): [TFMPC] - Missing connection for port 'tens'.
+# ** Warning: (vsim-3722) C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv(10): [TFMPC] - Missing connection for port 'units'.
+add wave sim:/decoder_tb/*
+run
+# Time=0, binary=0000, seg0=1000000, seg1=1000000
+# Time=10, binary=0001, seg0=1111001, seg1=1000000
+# Time=20, binary=0010, seg0=0100100, seg1=1000000
+# Time=30, binary=0011, seg0=0110000, seg1=1000000
+# Time=40, binary=0100, seg0=0011001, seg1=1000000
+# Time=50, binary=0101, seg0=0010010, seg1=1000000
+# Time=60, binary=0110, seg0=0000010, seg1=1000000
+# Time=70, binary=0111, seg0=0111000, seg1=1000000
+# Time=80, binary=1000, seg0=0000000, seg1=1000000
+# Time=90, binary=1001, seg0=0010000, seg1=1000000
+# Time=100, binary=1010, seg0=1000000, seg1=1111001
+# Time=110, binary=1011, seg0=1111001, seg1=1111001
+# Time=120, binary=1100, seg0=0100100, seg1=1111001
+# Time=130, binary=1101, seg0=0110000, seg1=1111001
+# Time=140, binary=1110, seg0=0011001, seg1=1111001
+# Time=150, binary=1111, seg0=0010010, seg1=1111001
+# ** Note: $finish    : C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv(55)
+#    Time: 160 ps  Iteration: 0  Instance: /decoder_tb
+# 1
+# Break in Module decoder_tb at C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/decoder_tb.sv line 55
+run
+run
+run
+run
+# End time: 22:25:38 on Aug 07,2024, Elapsed time: 0:05:44
+# Errors: 0, Warnings: 8
