@@ -1,0 +1,7 @@
+# Ignorar archivos temporales y de bloqueo de Quartus
+*.rdr.flock
+*.rdr
+*.lock
+*.log
+db/
+incremental_db/
