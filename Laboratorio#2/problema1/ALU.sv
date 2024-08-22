@@ -10,11 +10,13 @@ module ALU #(parameter N = 4)(
 	output logic [6:0] flags_seg
 	);
 	
-	logic [3:0] flag_suma;
+	logic [3:0] add_flag, subtract_flag,flag_AND, flag_XOR, flag_ShiftLeft, flag_ShiftRight;
 	
 	
 	 // resultado de cada operación
-	logic [N-1:0] result,result_suma;
+	logic [N-1:0] result,add_result,subtract_result,result_AND, 
+				  result_XOR,result_ShiftLeft,result_ShiftRight,
+				  result_division, result_modulo, result_OR;
 				  
 	
 	// Flags
@@ -25,7 +27,23 @@ module ALU #(parameter N = 4)(
 	// Instancias de cada operación
 	
 	
-	add #(N) suma_nums(.a(A_num),.b(B_num), .sum(result_suma),.Cout(flag_suma)); // suma
+	add #(N) suma_nums(.a(A_num),.b(B_num), .sum(add_result),.Cout(add_flag)); // suma
+	
+	nbitsubtract #(N) subtract_nums(.a(A_num),.b(B_num), .y(subtract_result),.bout(subtract_flag)); // resta
+	
+	dividerN #(N) division_num(.dividend(A_num),.divider(B_num), .quotient(result_division)); // división
+	
+	moduleN #(N) modulo_nums(.dividend(A_num),.divider(B_num), .remainder(result_modulo)); // módulo
+	
+	AND_gate #(N) And_module(.A_num(A_num), .B_num(B_num), .result(result_AND), .sign(flag_AND)); // AND
+	
+	XOR_gate #(N) Xor_module(.A_num(A_num), .B_num(B_num), .result(result_XOR), .sign(flag_XOR)); // XOR
+	
+	orGate #(N) Or_module(.a(A_num), .b(B_num), .result(result_OR)); // OR
+	
+	ShiftLeft_gate #(N) ShiftLeft_module(.A_num(A_num),.B_num(B_num), .result(result_ShiftLeft), .sign(flag_ShiftLeft)); // ShiftLeft
+	
+	shiftRight #(N) ShiftRight_module(.a(A_num),.displace(B_num),.result(result_ShiftRight),.sign(flag_ShiftRight)); // ShiftRight
 	
 
 	always @(*) begin
@@ -34,9 +52,9 @@ module ALU #(parameter N = 4)(
 				
 				{4'b1110, 2'b00}: begin // suma
 						
-						result <= result_suma;
+						result <= add_result;
 						
-						if(flag_suma == 1) begin
+						if(add_flag == 1) begin
 							flags <= 4'b0001; // acarreo
 						end
 						
@@ -45,6 +63,134 @@ module ALU #(parameter N = 4)(
 							flags <= 4'b0000; // bandera nula
 						
 						end
+				end
+				
+				{4'b1101, 2'b00}: begin // resta
+				
+						result <= subtract_result;
+						
+						if (subtract_flag == 1) begin
+							flags <= 4'b0100; // resultado negativo
+						end
+						
+						else if (subtract_result == 0) begin
+							
+							flags <= 4'b0010; // resultado es igual a cero
+						
+						end
+						
+						else begin
+						
+							flags <= 4'b0000; // bandera nula
+						
+						end
+						
+				end
+				{4'b0111, 2'b00}: begin // división
+						
+						result <= result_division;
+						
+						if(result_division == 0) begin
+						
+							flags <= 4'b0010; // resultado igual a cero
+							
+						end
+						
+						else begin
+							
+							flags <= 4'b0000; // bandera nula
+						
+						end
+						
+				end
+				
+				{4'b1110, 2'b01}: begin // módulo
+						
+						result <= result_modulo;
+						
+						if(result_modulo == 0) begin
+						
+							flags <= 4'b0010; // resultado igual a cero
+							
+						end
+						
+						else begin
+							
+							flags <= 4'b0000; // bandera nula
+						
+						end
+						
+						
+				end
+				
+				{4'b1101, 2'b01}: begin // AND
+						
+						result <= result_AND;
+						
+						if(result_AND == 0) begin
+						
+							flags <= 4'b0010; // resultado igual a cero
+							
+						end
+						
+						else begin
+							
+							flags <= 4'b0000; // bandera nula
+						
+						end
+				
+				end
+			
+				{4'b1011, 2'b01}: begin // XOR
+						
+						result <= result_XOR; 
+						
+						if(result_XOR == 0) begin
+						
+							flags <= 4'b0010; // resultado igual a cero
+							
+						end
+						
+						else begin
+							
+							flags <= 4'b0000; // bandera nula
+						
+						end
+				
+				end
+				
+				{4'b0111, 2'b01}: begin // OR
+						
+						result <= result_OR; //
+						
+						if(result_OR == 0) begin
+						
+							flags <= 4'b0010; // resultado igual a cero
+							
+						end
+						
+						else begin
+							
+							flags <= 4'b0000; // bandera nula
+						
+						end
+				
+				end
+				
+				{4'b1110, 2'b10}: begin // ShiftLeft
+						
+						result <= result_ShiftLeft;
+						
+						flags <= 4'b0000;
+					
+				end
+				
+				{4'b1101, 2'b10}: begin // ShiftRight
+						
+						result <= result_ShiftRight;
+						
+						flags <= 4'b0000;
+					
 				end
 				
 				default: result <= '0;
