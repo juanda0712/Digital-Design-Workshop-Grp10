@@ -19,8 +19,8 @@ module nbitsubtract #(parameter n = 4)
 	
 	assign bout = borrow[n];
 	
-	if(bout) begin
-		assign temp = y;
-		negative neg(.a(temp), .y(y));
-	end
+	//if(bout) begin
+	//	assign temp = y;
+	//	negative neg(.a(temp), .y(y));
+	//end
 endmodule

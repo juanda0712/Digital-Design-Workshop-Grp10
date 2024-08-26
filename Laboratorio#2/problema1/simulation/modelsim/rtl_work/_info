@@ -1,0 +1,117 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/simulation/modelsim
+vbaseAdd
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1724710714
+!i10b 1
+!s100 A2c1nYCIN3m;64^kT@Vbi0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[_kz<mPo<12C5HnP<fKEB0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1724707350
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/baseAdd.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/baseAdd.sv
+!i122 0
+L0 1 19
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1724710714.000000
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/baseAdd.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/baseAdd.sv|
+!i113 1
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1
+Z7 tCvgOpt 0
+nbase@add
+vmultiplicacion
+R1
+Z8 !s110 1724710715
+!i10b 1
+!s100 QeS?_CA8<Q;nW>L8?4Lj:3
+R2
+I`9K2A0E[AfelJAJ8R=Xi?1
+R3
+S1
+R0
+w1724710440
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion.sv
+!i122 1
+L0 1 94
+R4
+r1
+!s85 0
+31
+Z9 !s108 1724710715.000000
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion.sv|
+!i113 1
+R5
+R6
+R7
+vmultiplicacion_tb
+R1
+R8
+!i10b 1
+!s100 AXCad:?Hg0ANIZTU@5:R;3
+R2
+I<A1T1WeEPz^LU7Wg;X<L_0
+R3
+S1
+R0
+w1724710663
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion_tb.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion_tb.sv
+!i122 3
+L0 1 44
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion_tb.sv|
+!i113 1
+R5
+R6
+R7
+vProductos_Parciales
+R1
+R8
+!i10b 1
+!s100 :]4FfBTlf1nM17k@YAZ]71
+R2
+I4UFom[6=T5@CZBLZdh?km0
+R3
+S1
+R0
+w1724710084
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/Productos_Parciales.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/Productos_Parciales.sv
+!i122 2
+L0 1 18
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/Productos_Parciales.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/Productos_Parciales.sv|
+!i113 1
+R5
+R6
+R7
+n@productos_@parciales
