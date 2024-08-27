@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Wed Aug 21 21:55:31 2024
+Fri Aug 23 11:48:28 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -18,27 +18,28 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  10. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
  11. Parameter Settings for User Entity Instance: add:suma_nums
  12. Parameter Settings for User Entity Instance: nbitsubtract:subtract_nums
- 13. Parameter Settings for User Entity Instance: dividerN:division_num
- 14. Parameter Settings for User Entity Instance: moduleN:modulo_nums
- 15. Parameter Settings for User Entity Instance: AND_gate:And_module
- 16. Parameter Settings for User Entity Instance: XOR_gate:Xor_module
- 17. Parameter Settings for User Entity Instance: orGate:Or_module
- 18. Parameter Settings for User Entity Instance: ShiftLeft_gate:ShiftLeft_module
- 19. Parameter Settings for User Entity Instance: shiftRight:ShiftRight_module
- 20. Parameter Settings for Inferred Entity Instance: dividerN:division_num|lpm_divide:Div0
- 21. Parameter Settings for Inferred Entity Instance: moduleN:modulo_nums|lpm_divide:Mod0
- 22. Port Connectivity Checks: "shiftRight:ShiftRight_module"
- 23. Port Connectivity Checks: "ShiftLeft_gate:ShiftLeft_module"
- 24. Port Connectivity Checks: "XOR_gate:Xor_module"
- 25. Port Connectivity Checks: "AND_gate:And_module"
- 26. Port Connectivity Checks: "nbitsubtract:subtract_nums|fullsubtract:subt_loop[0].subt_inst"
- 27. Port Connectivity Checks: "nbitsubtract:subtract_nums"
- 28. Port Connectivity Checks: "add:suma_nums|baseAdd:adder_loop[0].adder_inst"
- 29. Port Connectivity Checks: "add:suma_nums"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+ 13. Parameter Settings for User Entity Instance: multiplierN:multipl_nums
+ 14. Parameter Settings for User Entity Instance: dividerN:division_num
+ 15. Parameter Settings for User Entity Instance: moduleN:modulo_nums
+ 16. Parameter Settings for User Entity Instance: AND_gate:And_module
+ 17. Parameter Settings for User Entity Instance: XOR_gate:Xor_module
+ 18. Parameter Settings for User Entity Instance: orGate:Or_module
+ 19. Parameter Settings for User Entity Instance: ShiftLeft_gate:ShiftLeft_module
+ 20. Parameter Settings for User Entity Instance: shiftRight:ShiftRight_module
+ 21. Parameter Settings for Inferred Entity Instance: dividerN:division_num|lpm_divide:Div0
+ 22. Parameter Settings for Inferred Entity Instance: moduleN:modulo_nums|lpm_divide:Mod0
+ 23. Port Connectivity Checks: "shiftRight:ShiftRight_module"
+ 24. Port Connectivity Checks: "ShiftLeft_gate:ShiftLeft_module"
+ 25. Port Connectivity Checks: "XOR_gate:Xor_module"
+ 26. Port Connectivity Checks: "AND_gate:And_module"
+ 27. Port Connectivity Checks: "nbitsubtract:subtract_nums|fullsubtract:subt_loop[0].subt_inst"
+ 28. Port Connectivity Checks: "nbitsubtract:subtract_nums"
+ 29. Port Connectivity Checks: "add:suma_nums|baseAdd:adder_loop[0].adder_inst"
+ 30. Port Connectivity Checks: "add:suma_nums"
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -65,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Aug 21 21:55:31 2024          ;
+; Analysis & Synthesis Status     ; Successful - Fri Aug 23 11:48:28 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; ALU                                            ;
 ; Top-level Entity Name           ; ALU                                            ;
@@ -189,32 +190,33 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; XOR_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/XOR_gate.sv                ;         ;
-; shiftRight.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/shiftRight.sv              ;         ;
-; ShiftLeft_gate.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ShiftLeft_gate.sv          ;         ;
-; orGate.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/orGate.sv                  ;         ;
-; moduleN.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/moduleN.sv                 ;         ;
-; dividerN.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/dividerN.sv                ;         ;
-; AND_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/AND_gate.sv                ;         ;
-; nbitsubtract.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/nbitsubtract.sv            ;         ;
-; fullsubtract.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/fullsubtract.sv            ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv                     ;         ;
-; add.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/add.sv                     ;         ;
-; baseAdd.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/baseAdd.sv                 ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                                                              ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc                                                                             ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                         ;         ;
-; aglobal231.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc                                                                              ;         ;
-; db/lpm_divide_1am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/lpm_divide_1am.tdf      ;         ;
-; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/sign_div_unsign_7kh.tdf ;         ;
-; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/alt_u_div_kse.tdf       ;         ;
-; db/lpm_divide_42m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/lpm_divide_42m.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                          ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; XOR_gate.sv                      ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/XOR_gate.sv                ;         ;
+; shiftRight.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/shiftRight.sv              ;         ;
+; ShiftLeft_gate.sv                ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ShiftLeft_gate.sv          ;         ;
+; orGate.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/orGate.sv                  ;         ;
+; moduleN.sv                       ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/moduleN.sv                 ;         ;
+; dividerN.sv                      ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/dividerN.sv                ;         ;
+; AND_gate.sv                      ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/AND_gate.sv                ;         ;
+; nbitsubtract.sv                  ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/nbitsubtract.sv            ;         ;
+; fullsubtract.sv                  ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/fullsubtract.sv            ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv                     ;         ;
+; add.sv                           ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/add.sv                     ;         ;
+; baseAdd.sv                       ; yes             ; User SystemVerilog HDL File        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/baseAdd.sv                 ;         ;
+; multipliern.sv                   ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multipliern.sv             ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                                                              ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc                                                                             ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                         ;         ;
+; aglobal231.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc                                                                              ;         ;
+; db/lpm_divide_1am.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/lpm_divide_1am.tdf      ;         ;
+; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/sign_div_unsign_7kh.tdf ;         ;
+; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/alt_u_div_kse.tdf       ;         ;
+; db/lpm_divide_42m.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/lpm_divide_42m.tdf      ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -222,14 +224,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 73             ;
+; Estimate of Logic utilization (ALMs needed) ; 92             ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 134            ;
-;     -- 7 input functions                    ; 4              ;
-;     -- 6 input functions                    ; 7              ;
-;     -- 5 input functions                    ; 38             ;
-;     -- 4 input functions                    ; 45             ;
-;     -- <=3 input functions                  ; 40             ;
+; Combinational ALUT usage for logic          ; 166            ;
+;     -- 7 input functions                    ; 6              ;
+;     -- 6 input functions                    ; 11             ;
+;     -- 5 input functions                    ; 42             ;
+;     -- 4 input functions                    ; 56             ;
+;     -- <=3 input functions                  ; 51             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 0              ;
 ;                                             ;                ;
@@ -237,10 +239,10 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
-; Maximum fan-out node                        ; B_num[1]~input ;
-; Maximum fan-out                             ; 32             ;
-; Total fan-out                               ; 605            ;
-; Average fan-out                             ; 2.78           ;
+; Maximum fan-out node                        ; B_num[3]~input ;
+; Maximum fan-out                             ; 44             ;
+; Total fan-out                               ; 745            ;
+; Average fan-out                             ; 2.98           ;
 +---------------------------------------------+----------------+
 
 
@@ -249,23 +251,23 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                        ; Entity Name         ; Library Name ;
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |ALU                                        ; 134 (82)            ; 0 (0)                     ; 0                 ; 0          ; 42   ; 0            ; |ALU                                                                                                                       ; ALU                 ; work         ;
-;    |add:suma_nums|                          ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|add:suma_nums                                                                                                         ; add                 ; work         ;
-;       |baseAdd:adder_loop[2].adder_inst|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|add:suma_nums|baseAdd:adder_loop[2].adder_inst                                                                        ; baseAdd             ; work         ;
-;    |dividerN:division_num|                  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num                                                                                                 ; dividerN            ; work         ;
-;       |lpm_divide:Div0|                     ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_1am:auto_generated|    ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                   ; lpm_divide_1am      ; work         ;
-;             |sign_div_unsign_7kh:divider|   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;                |alt_u_div_kse:divider|      ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
+; |ALU                                        ; 166 (96)            ; 0 (0)                     ; 0                 ; 0          ; 42   ; 0            ; |ALU                                                                                                                       ; ALU                 ; work         ;
+;    |add:suma_nums|                          ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|add:suma_nums                                                                                                         ; add                 ; work         ;
+;       |baseAdd:adder_loop[2].adder_inst|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|add:suma_nums|baseAdd:adder_loop[2].adder_inst                                                                        ; baseAdd             ; work         ;
+;    |dividerN:division_num|                  ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num                                                                                                 ; dividerN            ; work         ;
+;       |lpm_divide:Div0|                     ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_1am:auto_generated|    ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                   ; lpm_divide_1am      ; work         ;
+;             |sign_div_unsign_7kh:divider|   ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
+;                |alt_u_div_kse:divider|      ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|dividerN:division_num|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
 ;    |moduleN:modulo_nums|                    ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|moduleN:modulo_nums                                                                                                   ; moduleN             ; work         ;
 ;       |lpm_divide:Mod0|                     ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|moduleN:modulo_nums|lpm_divide:Mod0                                                                                   ; lpm_divide          ; work         ;
 ;          |lpm_divide_42m:auto_generated|    ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|moduleN:modulo_nums|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                     ; lpm_divide_42m      ; work         ;
 ;             |sign_div_unsign_7kh:divider|   ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|moduleN:modulo_nums|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                         ; sign_div_unsign_7kh ; work         ;
 ;                |alt_u_div_kse:divider|      ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|moduleN:modulo_nums|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider   ; alt_u_div_kse       ; work         ;
+;    |multiplierN:multipl_nums|               ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|multiplierN:multipl_nums                                                                                              ; multiplierN         ; work         ;
 ;    |nbitsubtract:subtract_nums|             ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|nbitsubtract:subtract_nums                                                                                            ; nbitsubtract        ; work         ;
 ;       |fullsubtract:subt_loop[1].subt_inst| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|nbitsubtract:subtract_nums|fullsubtract:subt_loop[1].subt_inst                                                        ; fullsubtract        ; work         ;
-;       |fullsubtract:subt_loop[3].subt_inst| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|nbitsubtract:subtract_nums|fullsubtract:subt_loop[3].subt_inst                                                        ; fullsubtract        ; work         ;
-;    |shiftRight:ShiftRight_module|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|shiftRight:ShiftRight_module                                                                                          ; shiftRight          ; work         ;
+;       |fullsubtract:subt_loop[2].subt_inst| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|nbitsubtract:subtract_nums|fullsubtract:subt_loop[2].subt_inst                                                        ; fullsubtract        ; work         ;
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -275,10 +277,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
-; flags.0010_191                                     ; WideOr2             ; yes                    ;
-; flags.0100_183                                     ; WideOr2             ; yes                    ;
-; flags.0001_199                                     ; WideOr2             ; yes                    ;
-; Number of user-specified and inferred latches = 3  ;                     ;                        ;
+; flags.1000_188                                     ; WideOr2             ; yes                    ;
+; flags.0010_204                                     ; WideOr2             ; yes                    ;
+; flags.0100_196                                     ; WideOr2             ; yes                    ;
+; flags.0001_212                                     ; WideOr2             ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -325,6 +328,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+------------------------------------------------+
 ; n              ; 4     ; Signed Integer                                 ;
 +----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplierN:multipl_nums ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -525,20 +538,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 140                         ;
-;     arith             ; 12                          ;
-;         0 data inputs ; 4                           ;
+; arriav_lcell_comb     ; 171                         ;
+;     arith             ; 27                          ;
+;         0 data inputs ; 7                           ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 2                           ;
-;         5 data inputs ; 6                           ;
-;     extend            ; 4                           ;
-;         7 data inputs ; 4                           ;
-;     normal            ; 106                         ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 13                          ;
-;         4 data inputs ; 39                          ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 10                          ;
+;     extend            ; 6                           ;
+;         7 data inputs ; 6                           ;
+;     normal            ; 120                         ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 49                          ;
 ;         5 data inputs ; 32                          ;
-;         6 data inputs ; 7                           ;
+;         6 data inputs ; 11                          ;
 ;     shared            ; 18                          ;
 ;         0 data inputs ; 6                           ;
 ;         2 data inputs ; 6                           ;
@@ -546,7 +562,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 42                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.50                       ;
-; Average LUT depth     ; 7.75                        ;
+; Average LUT depth     ; 7.80                        ;
 +-----------------------+-----------------------------+
 
 
@@ -555,7 +571,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -565,7 +581,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Wed Aug 21 21:55:21 2024
+    Info: Processing started: Fri Aug 23 11:48:06 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -594,24 +610,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file add.sv
 Info (12021): Found 1 design units, including 1 entities, in source file baseadd.sv
     Info (12023): Found entity 1: baseAdd File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/baseAdd.sv Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (10264): Verilog HDL Case Statement information at ALU.sv(268): all case item expressions in this case statement are onehot File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 268
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(51): inferring latch(es) for variable "flags", which holds its previous value in one or more paths through the always construct File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
-Info (10041): Inferred latch for "flags.1000" at ALU.sv(51) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
-Info (10041): Inferred latch for "flags.0100" at ALU.sv(51) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
-Info (10041): Inferred latch for "flags.0010" at ALU.sv(51) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
-Info (10041): Inferred latch for "flags.0001" at ALU.sv(51) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
-Info (10041): Inferred latch for "flags.0000" at ALU.sv(51) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
-Info (12128): Elaborating entity "add" for hierarchy "add:suma_nums" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 30
+Info (10264): Verilog HDL Case Statement information at ALU.sv(298): all case item expressions in this case statement are onehot File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 298
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(56): inferring latch(es) for variable "flags", which holds its previous value in one or more paths through the always construct File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
+Info (10041): Inferred latch for "flags.1000" at ALU.sv(56) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
+Info (10041): Inferred latch for "flags.0100" at ALU.sv(56) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
+Info (10041): Inferred latch for "flags.0010" at ALU.sv(56) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
+Info (10041): Inferred latch for "flags.0001" at ALU.sv(56) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
+Info (10041): Inferred latch for "flags.0000" at ALU.sv(56) File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
+Info (12128): Elaborating entity "add" for hierarchy "add:suma_nums" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 33
 Info (12128): Elaborating entity "baseAdd" for hierarchy "add:suma_nums|baseAdd:adder_loop[0].adder_inst" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/add.sv Line: 28
-Info (12128): Elaborating entity "nbitsubtract" for hierarchy "nbitsubtract:subtract_nums" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 32
+Info (12128): Elaborating entity "nbitsubtract" for hierarchy "nbitsubtract:subtract_nums" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 35
 Info (12128): Elaborating entity "fullsubtract" for hierarchy "nbitsubtract:subtract_nums|fullsubtract:subt_loop[0].subt_inst" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/nbitsubtract.sv Line: 15
-Info (12128): Elaborating entity "dividerN" for hierarchy "dividerN:division_num" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 34
-Info (12128): Elaborating entity "moduleN" for hierarchy "moduleN:modulo_nums" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 36
-Info (12128): Elaborating entity "AND_gate" for hierarchy "AND_gate:And_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 38
-Info (12128): Elaborating entity "XOR_gate" for hierarchy "XOR_gate:Xor_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 40
-Info (12128): Elaborating entity "orGate" for hierarchy "orGate:Or_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 42
-Info (12128): Elaborating entity "ShiftLeft_gate" for hierarchy "ShiftLeft_gate:ShiftLeft_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 44
-Info (12128): Elaborating entity "shiftRight" for hierarchy "shiftRight:ShiftRight_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 46
+Warning (12125): Using design file multipliern.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: multiplierN File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multipliern.sv Line: 1
+Info (12128): Elaborating entity "multiplierN" for hierarchy "multiplierN:multipl_nums" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 37
+Info (12128): Elaborating entity "dividerN" for hierarchy "dividerN:division_num" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 39
+Info (12128): Elaborating entity "moduleN" for hierarchy "moduleN:modulo_nums" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 41
+Info (12128): Elaborating entity "AND_gate" for hierarchy "AND_gate:And_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 43
+Info (12128): Elaborating entity "XOR_gate" for hierarchy "XOR_gate:Xor_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 45
+Info (12128): Elaborating entity "orGate" for hierarchy "orGate:Or_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 47
+Info (12128): Elaborating entity "ShiftLeft_gate" for hierarchy "ShiftLeft_gate:ShiftLeft_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 49
+Info (12128): Elaborating entity "shiftRight" for hierarchy "shiftRight:ShiftRight_module" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
 Info (278001): Inferred 2 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "dividerN:division_num|Div0" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/dividerN.sv Line: 12
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "moduleN:modulo_nums|Mod0" File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/moduleN.sv Line: 12
@@ -636,25 +655,27 @@ Info (12133): Instantiated megafunction "moduleN:modulo_nums|lpm_divide:Mod0" wi
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_42m.tdf
     Info (12023): Found entity 1: lpm_divide_42m File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/db/lpm_divide_42m.tdf Line: 25
 Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch flags.0010_191 has unsafe behavior File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal change_mode[1] File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 6
-Warning (13012): Latch flags.0100_183 has unsafe behavior File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
+Warning (13012): Latch flags.1000_188 has unsafe behavior File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
     Warning (13013): Ports D and ENA on the latch are fed by the same signal operations_buttons[0] File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 5
-Warning (13012): Latch flags.0001_199 has unsafe behavior File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 51
+Warning (13012): Latch flags.0010_204 has unsafe behavior File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal change_mode[1] File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 6
+Warning (13012): Latch flags.0100_196 has unsafe behavior File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal operations_buttons[0] File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 5
+Warning (13012): Latch flags.0001_212 has unsafe behavior File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 56
     Warning (13013): Ports D and ENA on the latch are fed by the same signal operations_buttons[0] File: C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/ALU.sv Line: 5
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/JuanDa/Documents/SEMESTRES/2024IIS/TDD/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/output_files/ALU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 176 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 208 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 134 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Wed Aug 21 21:55:31 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:09
+    Info (21061): Implemented 166 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Fri Aug 23 11:48:28 2024
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +------------------------------------------+
