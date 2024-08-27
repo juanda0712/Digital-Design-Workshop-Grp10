@@ -22,17 +22,17 @@ module multiplicacion_tb;
     // Caso: 2 * 3 = 6
     A = 4'd2; B = 4'd3;
     #10;
-    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, C); 
+    $display("A = %0d, B = %0d, R = %0d, C = %0b", A, B, R, C); 
 
     // Caso: 0 * 4 = 0
     A = 4'd0; B = 4'd4;
     #10;
-    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, C); 
+    $display("A = %0d, B = %0d, R = %0d, C = %0b", A, B, R, C); 
 	 
 	 // Caso: 15 * 15 = 225
     A = 4'd15; B = 4'd15;
     #10;
-    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, C); 
+    $display("A = %0d, B = %0d, R = %0d, C = %0b", A, B, R, C); 
 	 
     $stop;
   end

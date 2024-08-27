@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ALU
-Mon Aug 26 16:17:58 2024
+Mon Aug 26 18:59:15 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Aug 26 16:17:58 2024          ;
+; Analysis & Elaboration Status ; Successful - Mon Aug 26 18:59:15 2024          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; ALU                                            ;
 ; Top-level Entity Name         ; multiplicacion                                 ;
@@ -244,7 +244,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon Aug 26 16:17:45 2024
+    Info: Processing started: Mon Aug 26 18:59:03 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -279,14 +279,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file multipl
 Info (12021): Found 1 design units, including 1 entities, in source file productos_parciales.sv
     Info (12023): Found entity 1: Productos_Parciales File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/Productos_Parciales.sv Line: 1
 Info (12127): Elaborating entity "multiplicacion" for the top level hierarchy
-Info (12128): Elaborating entity "Productos_Parciales" for hierarchy "Productos_Parciales:gen_row[0].gen_column[0].PPX" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion.sv Line: 39
+Info (12128): Elaborating entity "Productos_Parciales" for hierarchy "Productos_Parciales:gen_row[0].gen_column[0].PPX" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/multiplicacion.sv Line: 32
 Info (12128): Elaborating entity "baseAdd" for hierarchy "Productos_Parciales:gen_row[0].gen_column[0].PPX|baseAdd:SCX" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/Productos_Parciales.sv Line: 16
 Info (144001): Generated suppressed messages file C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#2/problema1/output_files/ALU.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Mon Aug 26 16:17:58 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Processing ended: Mon Aug 26 18:59:15 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +--------------------------------------------+
