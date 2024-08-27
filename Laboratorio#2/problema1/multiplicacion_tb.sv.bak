@@ -1,0 +1,62 @@
+module multiplicacion_tb;
+
+  // Parámetro M para especificar el tamaño de los operandos
+  parameter M = 4;
+
+  // Señales de entrada y salida
+  logic signed [M-1:0] A;
+  logic signed [M-1:0] B;
+  logic signed [2*M-1:0] R;
+  logic C, N, V, Z;
+
+  // Instancia del módulo multiplicacion
+  multiplicacion #(M) dut (
+    .A(A),
+    .B(B),
+    .R(R),
+    .C(C),
+    .N(N),
+    .V(V),
+    .Z(Z)
+  );
+
+  // Procedimiento inicial para pruebas
+  initial begin
+    // Casos de prueba
+    // Se muestra el valor esperado para cada caso entre comentarios
+
+    // Caso 1: 2 * 3 = 6
+    A = 4'd2; B = 4'd3;
+    #10;
+    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, Z, N, V, C); // R = 6, Z = 0, N = 0, V = 0, C = 0
+
+    // Caso 2: -2 * 3 = -6
+    A = -4'd2; B = 4'd3;
+    #10;
+    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, Z, N, V, C); // R = -6, Z = 0, N = 1, V = 0, C = 0
+
+    // Caso 3: -2 * -3 = 6
+    A = -4'd2; B = -4'd3;
+    #10;
+    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, Z, N, V, C); // R = 6, Z = 0, N = 0, V = 0, C = 0
+
+    // Caso 4: 0 * 4 = 0
+    A = 4'd0; B = 4'd4;
+    #10;
+    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, Z, N, V, C); // R = 0, Z = 1, N = 0, V = 0, C = 0
+
+    // Caso 5: 7 * -2 = -14 (prueba de borde)
+    A = 4'd7; B = -4'd2;
+    #10;
+    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, Z, N, V, C); // R = -14, Z = 0, N = 1, V = 0, C = 0
+
+    // Caso 6: -8 * 1 = -8 (prueba de signo)
+    A = -4'd8; B = 4'd1;
+    #10;
+    $display("A = %0d, B = %0d, R = %0d, Z = %0b, N = %0b, V = %0b, C = %0b", A, B, R, Z, N, V, C); // R = -8, Z = 0, N = 1, V = 0, C = 0
+
+    // Fin de las pruebas
+    $stop;
+  end
+
+endmodule
