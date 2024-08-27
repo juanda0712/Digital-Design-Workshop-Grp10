@@ -63,7 +63,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
+; Start date & time ; 08/23/2024 11:48:08 ;
+=======
 ; Start date & time ; 08/26/2024 18:59:04 ;
+>>>>>>> development
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU                 ;
 +-------------------+---------------------+

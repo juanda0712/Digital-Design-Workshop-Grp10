@@ -18,6 +18,9 @@ module ALU #(parameter N = 4)(
 				  result_XOR,result_ShiftLeft,result_ShiftRight,
 				  result_division, result_modulo, result_OR;
 				  
+	// resultado de la multiplicación
+	logic [2*N-1:0] result_multipl;
+				  
 	
 	// Flags
 	
@@ -30,6 +33,8 @@ module ALU #(parameter N = 4)(
 	add #(N) suma_nums(.a(A_num),.b(B_num), .sum(add_result),.Cout(add_flag)); // suma
 	
 	nbitsubtract #(N) subtract_nums(.a(A_num),.b(B_num), .y(subtract_result),.bout(subtract_flag)); // resta
+	
+	multiplierN #(N) multipl_nums(.a(A_num),.b(B_num), .result(result_multipl)); // multiplicación
 	
 	dividerN #(N) division_num(.dividend(A_num),.divider(B_num), .quotient(result_division)); // división
 	
@@ -86,6 +91,31 @@ module ALU #(parameter N = 4)(
 						end
 						
 				end
+				
+				{4'b1011, 2'b00}: begin // multiplicación
+						
+						result <= result_multipl[3:0];
+						
+						if(result_multipl[2*N-1:4] != 0) begin
+							
+							flags <= 4'b1000; // desbordamiento
+							
+						end
+						
+						else if (result_multipl == 0) begin
+						
+							flags <= 4'b0010; // resultado igual a cero
+						
+						end
+						
+						else begin
+							
+							flags <= 4'b0000; // bandera nula
+						
+						end
+											
+				end
+				
 				{4'b0111, 2'b00}: begin // división
 						
 						result <= result_division;
