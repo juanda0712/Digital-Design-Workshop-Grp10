@@ -1,5 +1,5 @@
 Analysis & Elaboration report for tictactoe
-Mon Sep 23 17:53:28 2024
+Tue Sep 24 14:25:10 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Sep 23 17:53:28 2024          ;
+; Analysis & Elaboration Status ; Successful - Tue Sep 24 14:25:10 2024          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; tictactoe                                      ;
 ; Top-level Entity Name         ; fsm                                            ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon Sep 23 17:53:16 2024
+    Info: Processing started: Tue Sep 24 14:24:48 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tictactoe -c tictactoe --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -169,11 +169,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
     Info (12023): Found entity 1: fsm File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm_tb.sv
     Info (12023): Found entity 1: fsm_tb File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador.sv
+    Info (12023): Found entity 1: contador File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/contador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_frecuencia.sv
+    Info (12023): Found entity 1: divisor_frecuencia File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/divisor_frecuencia.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file check_winner.sv
+    Info (12023): Found entity 1: check_winner File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/check_winner.sv Line: 1
 Info (12127): Elaborating entity "fsm" for the top level hierarchy
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4774 megabytes
-    Info: Processing ended: Mon Sep 23 17:53:28 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Processing ended: Tue Sep 24 14:25:10 2024
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:30
 
 
