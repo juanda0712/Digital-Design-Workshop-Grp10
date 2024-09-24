@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/simulation/modelsim
+vfsm
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1727135651
+!i10b 1
+!s100 c:73JjVehF<7Z1id>J9l`0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ID9Kd1E:>iIN=Z5=Aj>0]d2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1727134985
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv
+!i122 0
+L0 1 86
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1727135650.000000
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3
+Z8 tCvgOpt 0
+vfsm_tb
+R1
+R2
+!i10b 1
+!s100 ]g9=SNX]3afUA>7?l^L^L3
+R3
+IMlNC@oP`1Az;9h[4G5gZ50
+R4
+S1
+R0
+w1727135550
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv
+!i122 1
+L0 1 89
+R5
+r1
+!s85 0
+31
+!s108 1727135651.000000
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv|
+!i113 1
+R6
+R7
+R8
