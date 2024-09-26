@@ -9,55 +9,237 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/simulation/modelsim
-vfsm
+vcheck_winner
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1727135651
+Z2 !s110 1727378909
 !i10b 1
-!s100 c:73JjVehF<7Z1id>J9l`0
+!s100 @obC3NHIU@WhBYBkAo@6m0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ID9Kd1E:>iIN=Z5=Aj>0]d2
+I:I0jHG2HbK0AzmY057IU63
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1727134985
-8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv
-FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv
-!i122 0
-L0 1 86
+w1727377726
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/check_winner.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/check_winner.sv
+!i122 1
+L0 1 54
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1727135650.000000
-!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv|
+Z6 !s108 1727378909.000000
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/check_winner.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/check_winner.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3
-Z8 tCvgOpt 0
-vfsm_tb
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3
+Z9 tCvgOpt 0
+vcontador
 R1
 R2
 !i10b 1
-!s100 ]g9=SNX]3afUA>7?l^L^L3
+!s100 K85K7<Ykbz2if<8YMznU<3
 R3
-IMlNC@oP`1Az;9h[4G5gZ50
+I301J18IVSeW:5nikh>::F2
 R4
 S1
 R0
-w1727135550
-8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv
-FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv
-!i122 1
-L0 1 89
+w1727208525
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/contador.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/contador.sv
+!i122 0
+L0 1 20
 R5
 r1
 !s85 0
 31
-!s108 1727135651.000000
-!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm_tb.sv|
-!i113 1
 R6
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/contador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/contador.sv|
+!i113 1
 R7
 R8
+R9
+vfsm
+R1
+R2
+!i10b 1
+!s100 cnk8C]`C>d_COGNZzGbQ[1
+R3
+ITWe58U<gOghN9WBlk=OXV3
+R4
+S1
+R0
+w1727376209
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv
+!i122 2
+L0 1 96
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/fsm.sv|
+!i113 1
+R7
+R8
+R9
+vplayer_movement_attack
+R1
+Z10 !s110 1727378910
+!i10b 1
+!s100 PU9gV_bX@=VM:C0IAgef63
+R3
+I[5Ad^n7KFWX8ZF;j7Njzb1
+R4
+S1
+R0
+w1727378146
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/player_movement_attack.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/player_movement_attack.sv
+!i122 6
+L0 1 86
+R5
+r1
+!s85 0
+31
+Z11 !s108 1727378910.000000
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/player_movement_attack.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/player_movement_attack.sv|
+!i113 1
+R7
+R8
+R9
+vrandom_func
+R1
+R10
+!i10b 1
+!s100 VDO;O8gkNjjEli6k@anZz0
+R3
+Ik8<45eRTPAbk]@M7400N10
+R4
+S1
+R0
+w1727308635
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/random_func.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/random_func.sv
+!i122 5
+L0 1 22
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/random_func.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/random_func.sv|
+!i113 1
+R7
+R8
+R9
+vtictactoe
+R1
+R10
+!i10b 1
+!s100 <oWBea_<nJPg3DY8NoE^93
+R3
+I[3g:Wcm_Zi73Gf?khjc=I0
+R4
+S1
+R0
+w1727378586
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe.sv
+!i122 3
+L0 1 105
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe.sv|
+!i113 1
+R7
+R8
+R9
+vtictactoe_board
+R1
+R10
+!i10b 1
+!s100 zan[Hf5LO237TX0cGB^Q12
+R3
+IMh55JPHO;9oeW?JZ8`f<o1
+R4
+S1
+R0
+w1727378067
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe_board.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe_board.sv
+!i122 4
+L0 1 35
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe_board.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe_board.sv|
+!i113 1
+R7
+R8
+R9
+vtictactoe_tb
+R1
+R10
+!i10b 1
+!s100 e_M?J:TUgFIRofbC5BG:K3
+R3
+IXBnz0E1f<1KL[9]>8EO:n0
+R4
+S1
+R0
+w1727378852
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe_tb.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe_tb.sv
+!i122 8
+L0 1 62
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/tictactoe_tb.sv|
+!i113 1
+R7
+R8
+R9
+vturno
+R1
+R10
+!i10b 1
+!s100 gQLNW1Ii:G1jnWE0M?z5[3
+R3
+IOHdYY30898az;4>[foiEg0
+R4
+S1
+R0
+w1727378433
+8C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/turno.sv
+FC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/turno.sv
+!i122 7
+L0 1 16
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/turno.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/Laboratorio#3/turno.sv|
+!i113 1
+R7
+R8
+R9
