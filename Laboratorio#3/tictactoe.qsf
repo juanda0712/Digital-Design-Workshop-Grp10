@@ -94,9 +94,10 @@ set_global_assignment -name EDA_TEST_BENCH_NAME random_func_tb -section_id eda_s
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id random_func_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME random_func_tb -section_id random_func_tb
 set_global_assignment -name EDA_TEST_BENCH_NAME fsm_tb -section_id eda_simulation
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME tictactoe_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tictactoe_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tictactoe_tb -section_id tictactoe_tb
+set_global_assignment -name SYSTEMVERILOG_FILE fsm_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tictactoe_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE gpio_receiver.sv
 set_global_assignment -name SYSTEMVERILOG_FILE divisor_frecuencia.sv
@@ -107,7 +108,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE vgaController.sv
 set_global_assignment -name SYSTEMVERILOG_FILE vga.sv
 set_global_assignment -name SYSTEMVERILOG_FILE pll.sv
 set_global_assignment -name SYSTEMVERILOG_FILE fsm.sv
-set_global_assignment -name SYSTEMVERILOG_FILE fsm_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tictactoe.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tictactoe_board.sv
 set_global_assignment -name SYSTEMVERILOG_FILE random_func.sv
@@ -116,8 +116,14 @@ set_global_assignment -name SYSTEMVERILOG_FILE player_movement_attack.sv
 set_global_assignment -name SYSTEMVERILOG_FILE turno.sv
 set_global_assignment -name EDA_TEST_BENCH_FILE random_func_tb.sv -section_id random_func_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE fsm_tb.sv -section_id fsm_tb
-set_global_assignment -name EDA_TEST_BENCH_NAME tictactoe_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tictactoe_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tictactoe_tb -section_id tictactoe_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE tictactoe_tb.sv -section_id tictactoe_tb
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_Y27 -to orden
+set_location_assignment PIN_AB30 -to cant_player
+set_location_assignment PIN_AB28 -to rst
+set_location_assignment PIN_AJ4 -to select
+set_location_assignment PIN_AK4 -to move
+set_location_assignment PIN_AA14 -to attack
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

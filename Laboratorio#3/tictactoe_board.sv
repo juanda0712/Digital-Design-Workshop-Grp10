@@ -10,6 +10,8 @@ module tictactoe_board(
     output logic [1:0] board [3:1][3:1]
 );
 
+	logic cont = 0;
+
     initial begin
         integer i, j;
         for (i = 1; i <= 3; i = i + 1) begin
@@ -28,8 +30,13 @@ module tictactoe_board(
                 end
             end
         end else if (end_attack_p1 || end_attack_p2 || en_check) begin
-            board[row][col] = current_player;
-        end
+				if (cont == 0) begin
+					board[row][col] = current_player;
+					cont = 1; 
+				end
+        end else begin
+			cont = 0;
+		  end
     end
 
 endmodule

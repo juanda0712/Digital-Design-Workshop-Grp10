@@ -64,6 +64,8 @@ always_comb begin
 				  end
 		4'b0101:if (timeout) begin 
 						next_state = 4'b0111;
+					end else if (end_attack_p2 || end_attack_p1) begin
+						next_state = 4'b0110;
 					end else if (current_player == 2'b10) begin
 						next_state = 4'b0100;
 					end else if (current_player == 2'b01) begin
@@ -80,14 +82,18 @@ always_comb begin
 					end else begin
 						next_state = 4'b0110;
 					end
-		4'b0111:next_state = 4'b0110;
+		4'b0111:if (end_attack_p2 || end_attack_p1) begin
+						next_state = 4'b0110;
+					end else begin 
+						next_state = 4'b0111;
+					end
 		4'b1000:next_state = 4'b1000;
 	endcase	
 end
 //output logic 
 
-assign en_attack_p1 = state == 4'b0011;
-assign en_attack_p2 = state == 4'b0100;
+assign en_attack_p1 = (state == 4'b0011 || (state == 4'b0101 && current_player == 2'b01)) ;
+assign en_attack_p2 = (state == 4'b0100 || (state == 4'b0101 && current_player == 2'b10));
 assign en_attack_random = state == 4'b0111;
 assign en_check = state == 4'b0110;
 assign temp_state = state;
