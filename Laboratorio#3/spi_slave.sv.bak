@@ -1,0 +1,19 @@
+module spi_slave (input clk, SCK, MOSI, SS, 
+						output reg [2:0] buttonStates);
+
+    reg [2:0] bitCounter = 3'b0;
+    reg [2:0] dataReceived = 3'b0;
+    
+    always @(posedge SCK or posedge SS) begin
+        if (SS) begin
+            bitCounter <= 3'b0;
+        end else begin
+            dataReceived <= {dataReceived[1:0], MOSI};
+            bitCounter <= bitCounter + 1;
+            
+            if (bitCounter == 2) begin
+                buttonStates <= dataReceived;
+            end
+        end
+    end
+endmodule
