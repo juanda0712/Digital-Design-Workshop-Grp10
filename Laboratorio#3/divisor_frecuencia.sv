@@ -5,7 +5,7 @@ module divisor_frecuencia (input logic clk,
 	logic clk_temp = 0;
 	
 	always @(posedge clk) begin
-		if(divisor == 50000000) begin
+		if(divisor == 35000000) begin
 			divisor = 0;
 			clk_temp = ~clk_temp;
 		end else begin

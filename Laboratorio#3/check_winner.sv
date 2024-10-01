@@ -12,7 +12,7 @@ module check_winner(
 	end
 
     always @(posedge clk) begin
-        winner = 0;
+        //winner = 0;
 
         if (en_check) begin
             for (int i = 1; i <= 3; i++) begin

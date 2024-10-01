@@ -42,11 +42,11 @@ set_global_assignment -name DEVICE 5CSXFC6D6F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY tictactoe
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:14:02  SEPTEMBER 23, 2024"
-set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "Cyclone V SoC Development Kit"
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (SystemVerilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
@@ -87,16 +87,19 @@ set_location_assignment PIN_AK19 -to hsync
 set_location_assignment PIN_AK18 -to vsync
 set_location_assignment PIN_AJ22 -to sync_b
 set_location_assignment PIN_AK21 -to vgaclk
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tictactoe_tb -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME random_func_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id random_func_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME random_func_tb -section_id random_func_tb
-set_global_assignment -name EDA_TEST_BENCH_NAME fsm_tb -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME tictactoe_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tictactoe_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tictactoe_tb -section_id tictactoe_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE random_func_tb.sv -section_id random_func_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE fsm_tb.sv -section_id fsm_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE tictactoe_tb.sv -section_id tictactoe_tb
+set_location_assignment PIN_V25 -to orden
+set_location_assignment PIN_AB28 -to cant_player
+set_location_assignment PIN_AB30 -to rst
+set_location_assignment PIN_Y27 -to select
+set_location_assignment PIN_W25 -to move
+set_location_assignment PIN_AC30 -to attack
 set_global_assignment -name SYSTEMVERILOG_FILE fsm_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tictactoe_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE gpio_receiver.sv
@@ -114,16 +117,15 @@ set_global_assignment -name SYSTEMVERILOG_FILE random_func.sv
 set_global_assignment -name SYSTEMVERILOG_FILE random_func_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE player_movement_attack.sv
 set_global_assignment -name SYSTEMVERILOG_FILE turno.sv
-set_global_assignment -name EDA_TEST_BENCH_FILE random_func_tb.sv -section_id random_func_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE fsm_tb.sv -section_id fsm_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE tictactoe_tb.sv -section_id tictactoe_tb
+set_location_assignment PIN_AA24 -to estado[0]
+set_location_assignment PIN_AB23 -to estado[1]
+set_location_assignment PIN_AC23 -to estado[2]
+set_location_assignment PIN_AD24 -to estado[3]
+set_location_assignment PIN_AG25 -to current_player_out[0]
+set_location_assignment PIN_AF25 -to current_player_out[1]
+set_location_assignment PIN_AE24 -to winner[0]
+set_location_assignment PIN_AF24 -to winner[1]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_Y27 -to orden
-set_location_assignment PIN_AB30 -to cant_player
-set_location_assignment PIN_AB28 -to rst
-set_location_assignment PIN_AJ4 -to select
-set_location_assignment PIN_AK4 -to move
-set_location_assignment PIN_AA14 -to attack
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
