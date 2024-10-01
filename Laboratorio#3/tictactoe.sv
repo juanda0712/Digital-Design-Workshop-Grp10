@@ -42,7 +42,7 @@ module tictactoe(
 
     // Generador de números aleatorios
     random_func random_x(
-        .clk(new_clk),  //new_clk
+        .clk(clk),  //new_clk
         .rst(rst),
         .random(rand_x)
     );
@@ -54,7 +54,7 @@ module tictactoe(
 
     // Máquina de estados finitos (FSM)
     fsm fsm_co(
-        .clk(new_clk),  //new_clk
+        .clk(clk),  //new_clk
         .rst(rst),
         .select(select),
         .orden(orden),
@@ -73,14 +73,14 @@ module tictactoe(
     
     // Control de turnos
     turno control_turno (
-        .clk(new_clk),  //new_clk
+        .clk(clk),  //new_clk
         .temp_state(temp_state),
         .current_player(current_player)
     );
 
     // Movimiento y ataques
     player_movement_attack player_mov_atk(
-        .clk(new_clk),   //new_clk
+        .clk(clk),   //new_clk
         .rst(rst),
         .move(move),
         .attack(attack),
@@ -99,7 +99,7 @@ module tictactoe(
     
     // Tablero del juego
     tictactoe_board board_module(
-        .clk(new_clk),  //new_clk
+        .clk(clk),  //new_clk
         .reset(rst),
         .end_attack_p1(end_attack_p1),
         .end_attack_p2(end_attack_p2),
@@ -115,13 +115,13 @@ module tictactoe(
         .ena_attack_p1(en_attack_p1),
         .ena_attack_p2(en_attack_p2),
         .ena_check(en_check),
-        .clk(new_clk),  //new_clk
+        .clk(clk),  //new_clk
         .timeout(timeout)
     );
 
     // Comprobar el ganador
     check_winner winner_module(
-        .clk(new_clk),  //new_clk
+        .clk(clk),  //new_clk
         .en_check(en_check),
         .board(board),
         .winner(winner)
