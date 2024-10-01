@@ -6,7 +6,7 @@ module fsm(input logic clk,
 			  input logic end_attack_p1,
 			  input logic end_attack_p2,
 			  input logic timeout,
-			  input logic gameover,
+			  input logic [1:0] winner,
 			  input logic [1:0] current_player,
 			  output logic [3:0] temp_state,
 			  output logic en_attack_p1,
@@ -46,22 +46,36 @@ always_comb begin
 					end else begin
 						next_state = 4'b0010;
 					end
-		4'b0011:begin
-					if (end_attack_p1) begin 
-						next_state = 4'b0110;
-					end else begin
-						next_state = 4'b0101;
-					end
-				  end
-		4'b0100:begin
-					if (!cant_player) begin 
-						next_state = 4'b0111;
-					end else if (cant_player && end_attack_p2) begin
-						next_state = 4'b0110;
-					end else begin
-						next_state = 4'b0101;
-					end
-				  end
+		//4'b0011:begin
+			//		if (end_attack_p1) begin 
+			//			next_state = 4'b0110;
+				//	end else begin
+				//		next_state = 4'b0101;
+				//	end
+				 // end
+		4'b0011: begin
+			 if (winner != 2'b00) begin
+				  next_state = 4'b1000; // Fin del juego
+			 end else if (end_attack_p1) begin
+				  next_state = 4'b0110; // Chequeo de ganador
+			 end else begin
+				  next_state = 4'b0101; // Chequeo de estado
+			 end
+		end
+
+		4'b0100: begin
+			 if (winner != 2'b00) begin
+				  next_state = 4'b1000; // Fin del juego
+			 end else if (!cant_player) begin
+				  next_state = 4'b0111; // Ataque aleatorio
+			 end else if (cant_player && end_attack_p2) begin
+				  next_state = 4'b0110; // Chequeo de ganador
+			 end else begin
+				  next_state = 4'b0101; // Chequeo de estado
+			 end
+		end
+
+
 		4'b0101:if (timeout) begin 
 						next_state = 4'b0111;
 					end else if (end_attack_p2 || end_attack_p1) begin
@@ -73,8 +87,8 @@ always_comb begin
 					end else begin
 						next_state = 4'b0101;
 					end
-		4'b0110:if (gameover) begin 
-						next_state = 4'b1000;
+		4'b0110:if (winner != 2'b00) begin //chequeo ganador
+						next_state = 4'b1000; //win 01 o 10 o 11
 					end else if (current_player == 2'b01) begin
 						next_state = 4'b0100;
 					end else if (current_player == 2'b10) begin
