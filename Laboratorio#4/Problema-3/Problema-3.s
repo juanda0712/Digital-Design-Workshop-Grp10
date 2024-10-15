@@ -1,25 +1,25 @@
 .global main  
 
-.data  @ Sección de datos, donde se definen las variables estáticas.
+.data
 
-matrix1:  @ Define la matriz 1.
-    .word 1, 2, 3, 4  @ Define los elementos de la primera fila.
-    .word 1, 2, 3, 4  @ Define los elementos de la segunda fila.
-    .word 1, 2, 3, 4  @ Define los elementos de la tercera fila.
-    .word 1, 2, 3, 4  @ Define los elementos de la cuarta fila.
+matrix1:
+    .word 1, 2, 3, 4
+    .word 1, 2, 3, 4
+    .word 1, 2, 3, 4
+    .word 1, 2, 3, 4
 
-matrix2:  @ Define la matriz 2.
-    .word 1, 1, 1, 1  @ Define los elementos de la primera fila.
-    .word 2, 2, 2, 2  @ Define los elementos de la segunda fila.
-    .word 3, 3, 3, 3  @ Define los elementos de la tercera fila.
-    .word 4, 4, 4, 4  @ Define los elementos de la cuarta fila.
+matrix2:
+    .word 1, 1, 1, 1 
+    .word 2, 2, 2, 2
+    .word 3, 3, 3, 3 
+    .word 4, 4, 4, 4
 
-result:  @ Define el array para almacenar el resultado de la suma.
-    .space 64  @ Reserva espacio para un array de 16 elementos de 4 bytes cada uno (4x4 matrix requires 64 bytes).
+result: 
+    .space 64  @ Reserva espacio 
 
-.text  @ Sección de código, donde se definen las instrucciones del programa.
+.text  
 
-main:  @ Función principal del programa.
+main: 
 
     @ Carga la dirección de matrix1 en un registro.
     ldr r0, =matrix1
@@ -47,11 +47,10 @@ loop:
     add r3, r3, #1  @ Incrementa el contador del bucle.
     
     @ Comprueba si el contador ha llegado a 16 (fin de los arrays).
-    cmp r3, #16  @ Compara el contador con 16.
-    blt loop  @ Salta a loop si el contador es menor que 16 (repetir el bucle).
+    cmp r3, #16  
+    blt loop  
     
-    @ Fin del programa.
-    b end  @ Salta a la etiqueta end.
+    b end  
 
 end:
 
