@@ -1,0 +1,43 @@
+module ALU (
+	input logic [1:0] ALUControl,  
+   input logic [15:0] SrcA,        
+   input logic [15:0] SrcB,        
+   output logic [15:0] Result,     
+   output logic [3:0] flags
+	);
+	
+	logic [15:0] temp_result;
+   logic temp_carry; 
+   logic temp_overflow;
+	
+	always_comb begin
+	
+		
+		case (ALUControl)
+			2'b00: Result = begin
+									{temp_carry, temp_result} = A + B;
+									if ((A[15] == B[15]) && (temp_result[15] != A[15])) begin
+										temp_overflow = 1;
+									end
+								 end 
+			2'b01: Result = begin
+									{temp_carry, temp_result} = A - B;
+									if ((A[15] != B[15]) && (temp_result[15] != A[15])) begin
+										temp_overflow = 1;
+									end
+								 end  
+			2'b10: Result = temp_result = A & B; 
+			2'b11: Result = temp_result = A | B;  
+			default: Result = 16'b0;      
+		endcase
+		  
+     
+		flags[0] = (temp_result == 16'b0);  // Bandera de cero
+      flags[1] = temp_result[15];         // Bandera de negativo
+      flags[2] = temp_carry;              // Bandera de carry
+      flags[3] = temp_overflow;           // Bandera de overflow
+
+      result = temp_result;
+	end
+
+endmodule

@@ -1,0 +1,50 @@
+module datapath(
+	input logic clk, 
+	input logic rst,
+	input logic [1:0] RegSrc,
+	input logic RegWrite,
+	input logic [1:0] ImmSrc,
+	input logic ALUSrc,
+	input logic [1:0] ALUControl,
+	input logic MemtoReg,
+	input logic PCSrc,
+	input logic [31:0] ReadData,
+	input logic [31:0] instr,
+	output logic [3:0] ALUFlags,
+	output logic [31:0] pc,
+	output logic [31:0] ALUResult, 
+	output logic [31:0] WriteData
+	);
+	
+logic [31:0] PCNext;
+logic [31:0] PCPlus4;
+logic [31:0] PCPlus8;
+logic [31:0] ExtImm;
+logic [31:0] SrcA;
+logic [31:0] SrcB;
+logic [31:0] Result;
+logic [3:0] RA1;
+logic [3:0] RA2;
+
+mux2 #(32) pcmux(PCPlus4, Result, PCSrc, PCNext);
+flopr #(32) pcreg(clk, reset, PCNext, PC);
+adder #(32) pcadd1(PC, 32'b100, PCPlus4);
+adder #(32) pcadd2(PCPlus4, 32'b100, PCPlus8);
+
+mux2 #(4) ra1mux(Instr[19:16], 4'b1111, RegSrc[0], RA1);
+mux2 #(4) ra2mux(Instr[3:0], Instr[15:12], RegSrc[1], RA2);
+regfile rf(clk, RegWrite, RA1, RA2,
+Instr[15:12], Result, PCPlus8,
+SrcA, WriteData);
+mux2 #(32) resmux(ALUResult, ReadData, MemtoReg, Result);
+extend ext(Instr[23:0], ImmSrc, ExtImm);
+
+mux2 #(32) srcbmux(WriteData, ExtImm, ALUSrc, SrcB);
+alu alu(
+	.SrcA(SrcA),
+	.SrcB(SrcB),
+	.ALUControl(ALUControl),
+	.ALUResult(ALUResult),
+	.ALUFlags(ALUFlags)
+	);
+endmodule

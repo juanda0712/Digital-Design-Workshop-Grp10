@@ -1,0 +1,30 @@
+module filtros_clasicos_tb();
+	logic clk;
+	logic rst;
+	logic [31:0] address;
+	logic [7:0] q_b;
+	
+	filtros_clasicos uft(
+		.clk(clk),
+		.rst(rst),
+		.address(address),
+		.q_b(q_b)
+		);
+	
+	always begin
+		#10 clk = ~clk;
+	end
+		
+	initial begin
+		reset <= 1;
+		address <= 32'b0;
+		#22;
+		reset <=0;
+		
+		#200;
+		$stop;
+	end
+
+endmodule
+	
+	
