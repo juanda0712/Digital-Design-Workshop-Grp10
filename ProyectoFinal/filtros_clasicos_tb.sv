@@ -20,7 +20,7 @@ module filtros_clasicos_tb();
 	initial begin
 		rst = 1;
 		clk = 0;
-		address = 32'd96;
+		address = 32'd220000;
 		#32;
 		rst =0;
 		

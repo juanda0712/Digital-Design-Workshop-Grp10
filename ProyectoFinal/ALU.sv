@@ -1,12 +1,12 @@
 module ALU (
 	input logic [1:0] ALUControl,  
-   input logic [15:0] SrcA,        
-   input logic [15:0] SrcB,        
-   output logic [15:0] Result,     
+   input logic [31:0] SrcA,        
+   input logic [31:0] SrcB,        
+   output logic [17:0] Result,      
    output logic [3:0] flags
 	);
 	
-logic [15:0] temp_result;
+logic [17:0] temp_result;
 logic temp_carry; 
 logic temp_overflow;
 

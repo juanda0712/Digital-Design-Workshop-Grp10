@@ -1,5 +1,5 @@
 Analysis & Elaboration report for filtros_clasicos
-Wed Nov  6 23:21:03 2024
+Tue Nov 19 16:25:41 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -11,7 +11,7 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
   5. Source assignments for instruction_unit:imem|altsyncram:altsyncram_component|altsyncram_2bf1:auto_generated
-  6. Source assignments for memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_29o2:auto_generated
+  6. Source assignments for memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_gfo2:auto_generated
   7. Parameter Settings for User Entity Instance: controller_unit:c|condlogic_unit:cl|flopenr:flagreg1
   8. Parameter Settings for User Entity Instance: controller_unit:c|condlogic_unit:cl|flopenr:flagreg0
   9. Parameter Settings for User Entity Instance: datapath:dp|mux2:pcmux
@@ -29,15 +29,14 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
  21. Port Connectivity Checks: "memory_unit:mmem"
  22. Port Connectivity Checks: "instruction_unit:imem"
  23. Port Connectivity Checks: "datapath:dp|ALU:alu"
- 24. Port Connectivity Checks: "datapath:dp|mux2:srcbmux"
- 25. Port Connectivity Checks: "datapath:dp|mux2:resmux"
- 26. Port Connectivity Checks: "datapath:dp|register_unit:rf"
- 27. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
- 28. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
- 29. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
- 30. Port Connectivity Checks: "datapath:dp"
- 31. Analysis & Elaboration Messages
- 32. Analysis & Elaboration Suppressed Messages
+ 24. Port Connectivity Checks: "datapath:dp|mux2:resmux"
+ 25. Port Connectivity Checks: "datapath:dp|register_unit:rf"
+ 26. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
+ 27. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
+ 28. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
+ 29. Port Connectivity Checks: "datapath:dp"
+ 30. Analysis & Elaboration Messages
+ 31. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -64,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Nov  6 23:21:03 2024          ;
+; Analysis & Elaboration Status ; Successful - Tue Nov 19 16:25:41 2024          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; filtros_clasicos                               ;
 ; Top-level Entity Name         ; filtros_clasicos                               ;
@@ -115,7 +114,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 +--------------------------------------------------------------------------------------------------------+
-; Source assignments for memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_29o2:auto_generated ;
+; Source assignments for memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_gfo2:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                       ;
 +---------------------------------+--------------------+------+------------------------------------------+
@@ -297,8 +296,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                           ;
 ; OPERATION_MODE                     ; BIDIR_DUAL_PORT      ; Untyped                           ;
 ; WIDTH_A                            ; 8                    ; Signed Integer                    ;
-; WIDTHAD_A                          ; 10                   ; Signed Integer                    ;
-; NUMWORDS_A                         ; 1024                 ; Signed Integer                    ;
+; WIDTHAD_A                          ; 18                   ; Signed Integer                    ;
+; NUMWORDS_A                         ; 240000               ; Signed Integer                    ;
 ; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                           ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                           ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                           ;
@@ -306,8 +305,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                           ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                           ;
 ; WIDTH_B                            ; 8                    ; Signed Integer                    ;
-; WIDTHAD_B                          ; 10                   ; Signed Integer                    ;
-; NUMWORDS_B                         ; 1024                 ; Signed Integer                    ;
+; WIDTHAD_B                          ; 18                   ; Signed Integer                    ;
+; NUMWORDS_B                         ; 240000               ; Signed Integer                    ;
 ; INDATA_REG_B                       ; CLOCK0               ; Untyped                           ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0               ; Untyped                           ;
 ; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                           ;
@@ -340,7 +339,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_29o2      ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_gfo2      ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -365,10 +364,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; memory_unit:mmem|altsyncram:altsyncram_component      ;
 ;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                       ;
 ;     -- WIDTH_A                            ; 8                                                     ;
-;     -- NUMWORDS_A                         ; 1024                                                  ;
+;     -- NUMWORDS_A                         ; 240000                                                ;
 ;     -- OUTDATA_REG_A                      ; CLOCK0                                                ;
 ;     -- WIDTH_B                            ; 8                                                     ;
-;     -- NUMWORDS_B                         ; 1024                                                  ;
+;     -- NUMWORDS_B                         ; 240000                                                ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                ;
 ;     -- OUTDATA_REG_B                      ; CLOCK0                                                ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                  ;
@@ -468,8 +467,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                                                                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; address_a ; Input  ; Warning  ; Input port expression (16 bits) is wider than the input port (10 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts.  ;
-; address_b ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; address_b ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (18 bits) it drives.  The 14 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; data_a    ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts.  ;
 ; data_b    ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; wren_b    ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
@@ -486,24 +484,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp|ALU:alu"                                                                                                                                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; SrcA   ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; SrcB   ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; Result ; Output ; Warning  ; Output or bidir port (16 bits) is smaller than the port expression (32 bits) it drives.  The 16 most-significant bit(s) in the port expression will be connected to GND.            ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp|mux2:srcbmux"                                                                ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; y[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|ALU:alu"                                                                                                                                                       ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                  ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Result ; Output ; Warning  ; Output or bidir port (18 bits) is smaller than the port expression (32 bits) it drives.  The 14 most-significant bit(s) in the port expression will be connected to GND. ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -515,16 +502,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp|register_unit:rf"                                                                                                                                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; wd3  ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; r15  ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; rd1  ; Output ; Warning  ; Output or bidir port (16 bits) is smaller than the port expression (32 bits) it drives.  The 16 most-significant bit(s) in the port expression will be connected to GND.            ;
-; rd2  ; Output ; Warning  ; Output or bidir port (16 bits) is smaller than the port expression (32 bits) it drives.  The 16 most-significant bit(s) in the port expression will be connected to GND.            ;
-+------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|register_unit:rf"                                                                                                                                                      ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; wd3  ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; r15  ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -557,16 +542,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp"                                                                                                                                  ;
-+-------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
-; Port              ; Type   ; Severity ; Details                                                                                                                          ;
-+-------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
-; pc[31..5]         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
-; ALUResult         ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "ALUResult[31..16]" have no fanouts ;
-; ALUResult[15..10] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
-; WriteData[31..8]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
-+-------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp"                                                                                                                                 ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                                                                          ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; pc[31..5]        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
+; ALUResult        ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (18 bits) it drives; bit(s) "ALUResult[31..18]" have no fanouts ;
+; WriteData[31..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -575,42 +559,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed Nov  6 23:20:50 2024
+    Info: Processing started: Tue Nov 19 16:25:26 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off filtros_clasicos -c filtros_clasicos --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file filtros_clasicos.sv
+    Info (12023): Found entity 1: filtros_clasicos File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/filtros_clasicos.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file filtros_clasicos_tb.sv
+    Info (12023): Found entity 1: filtros_clasicos_tb File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/filtros_clasicos_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_unit.v
+    Info (12023): Found entity 1: instruction_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/instruction_unit.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file memory_unit.v
+    Info (12023): Found entity 1: memory_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/memory_unit.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file register_unit.sv
+    Info (12023): Found entity 1: register_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/register_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_unit.sv
+    Info (12023): Found entity 1: decoder_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/decoder_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condlogic_unit.sv
+    Info (12023): Found entity 1: condlogic_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/condlogic_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condcheck_unit.sv
+    Info (12023): Found entity 1: condcheck_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/condcheck_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controller_unit.sv
+    Info (12023): Found entity 1: controller_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/controller_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
+    Info (12023): Found entity 1: datapath File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
     Info (12023): Found entity 1: mux2 File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
     Info (12023): Found entity 1: flopr File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/flopr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
     Info (12023): Found entity 1: flopenr File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/flopenr.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file decoder_unit.sv
-    Info (12023): Found entity 1: decoder_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/decoder_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
-    Info (12023): Found entity 1: datapath File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file condlogic_unit.sv
-    Info (12023): Found entity 1: condlogic_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/condlogic_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file condcheck_unit.sv
-    Info (12023): Found entity 1: condcheck_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/condcheck_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/adder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file controller_unit.sv
-    Info (12023): Found entity 1: controller_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/controller_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file register_unit.sv
-    Info (12023): Found entity 1: register_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/register_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imm_unit.sv
     Info (12023): Found entity 1: imm_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/imm_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file filtros_clasicos.sv
-    Info (12023): Found entity 1: filtros_clasicos File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/filtros_clasicos.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file instruction_unit.v
-    Info (12023): Found entity 1: instruction_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/instruction_unit.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file filtros_clasicos_tb.sv
-    Info (12023): Found entity 1: filtros_clasicos_tb File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/filtros_clasicos_tb.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file memory_unit.v
-    Info (12023): Found entity 1: memory_unit File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/memory_unit.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/adder.sv Line: 1
 Info (12127): Elaborating entity "filtros_clasicos" for the top level hierarchy
 Info (12128): Elaborating entity "controller_unit" for hierarchy "controller_unit:c" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/filtros_clasicos.sv Line: 37
 Info (12128): Elaborating entity "decoder_unit" for hierarchy "controller_unit:c|decoder_unit:dec" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/controller_unit.sv Line: 34
@@ -623,10 +607,12 @@ Info (12128): Elaborating entity "flopr" for hierarchy "datapath:dp|flopr:pcreg"
 Info (12128): Elaborating entity "adder" for hierarchy "datapath:dp|adder:pcadd1" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 31
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|mux2:ra1mux" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 34
 Info (12128): Elaborating entity "register_unit" for hierarchy "datapath:dp|register_unit:rf" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 46
-Warning (10230): Verilog HDL assignment warning at register_unit.sv(18): truncated value with size 32 to match size of target (16) File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/register_unit.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at register_unit.sv(19): truncated value with size 32 to match size of target (16) File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/register_unit.sv Line: 19
 Info (12128): Elaborating entity "imm_unit" for hierarchy "datapath:dp|imm_unit:ext" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 52
 Info (12128): Elaborating entity "ALU" for hierarchy "datapath:dp|ALU:alu" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 61
+Warning (10230): Verilog HDL assignment warning at ALU.sv(18): truncated value with size 32 to match size of target (19) File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at ALU.sv(24): truncated value with size 32 to match size of target (19) File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 24
+Warning (10230): Verilog HDL assignment warning at ALU.sv(29): truncated value with size 32 to match size of target (18) File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at ALU.sv(30): truncated value with size 32 to match size of target (18) File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 30
 Warning (10240): Verilog HDL Always Construct warning at ALU.sv(16): inferring latch(es) for variable "temp_carry", which holds its previous value in one or more paths through the always construct File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 16
 Warning (10240): Verilog HDL Always Construct warning at ALU.sv(16): inferring latch(es) for variable "temp_overflow", which holds its previous value in one or more paths through the always construct File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 16
 Info (10041): Inferred latch for "flags[3]" at ALU.sv(25) File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv Line: 25
@@ -664,8 +650,8 @@ Info (12133): Instantiated megafunction "memory_unit:mmem|altsyncram:altsyncram_
     Info (12134): Parameter "init_file" = "RAMem.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "1024"
-    Info (12134): Parameter "numwords_b" = "1024"
+    Info (12134): Parameter "numwords_a" = "240000"
+    Info (12134): Parameter "numwords_b" = "240000"
     Info (12134): Parameter "operation_mode" = "BIDIR_DUAL_PORT"
     Info (12134): Parameter "outdata_aclr_a" = "NONE"
     Info (12134): Parameter "outdata_aclr_b" = "NONE"
@@ -675,16 +661,25 @@ Info (12133): Instantiated megafunction "memory_unit:mmem|altsyncram:altsyncram_
     Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
     Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
     Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "widthad_a" = "10"
-    Info (12134): Parameter "widthad_b" = "10"
+    Info (12134): Parameter "widthad_a" = "18"
+    Info (12134): Parameter "widthad_b" = "18"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_b" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_29o2.tdf
-    Info (12023): Found entity 1: altsyncram_29o2 File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/db/altsyncram_29o2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_29o2" for hierarchy "memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_29o2:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gfo2.tdf
+    Info (12023): Found entity 1: altsyncram_gfo2 File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/db/altsyncram_gfo2.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_gfo2" for hierarchy "memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_gfo2:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_qma.tdf
+    Info (12023): Found entity 1: decode_qma File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/db/decode_qma.tdf Line: 23
+Info (12128): Elaborating entity "decode_qma" for hierarchy "memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_gfo2:auto_generated|decode_qma:decode2" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/db/altsyncram_gfo2.tdf Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_j2a.tdf
+    Info (12023): Found entity 1: decode_j2a File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/db/decode_j2a.tdf Line: 23
+Info (12128): Elaborating entity "decode_j2a" for hierarchy "memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_gfo2:auto_generated|decode_j2a:rden_decode_a" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/db/altsyncram_gfo2.tdf Line: 53
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ahb.tdf
+    Info (12023): Found entity 1: mux_ahb File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/db/mux_ahb.tdf Line: 23
+Info (12128): Elaborating entity "mux_ahb" for hierarchy "memory_unit:mmem|altsyncram:altsyncram_component|altsyncram_gfo2:auto_generated|mux_ahb:mux4" File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/db/altsyncram_gfo2.tdf Line: 55
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "datapath:dp|ALUResult[31]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 15
     Warning (12110): Net "datapath:dp|ALUResult[30]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 15
@@ -700,40 +695,6 @@ Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "datapath:dp|ALUResult[20]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 15
     Warning (12110): Net "datapath:dp|ALUResult[19]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 15
     Warning (12110): Net "datapath:dp|ALUResult[18]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 15
-    Warning (12110): Net "datapath:dp|ALUResult[17]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 15
-    Warning (12110): Net "datapath:dp|ALUResult[16]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 15
-    Warning (12110): Net "datapath:dp|WriteData[31]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[30]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[29]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[28]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[27]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[26]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[25]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[24]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[23]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[22]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[21]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[20]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[19]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[18]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[17]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|WriteData[16]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 17
-    Warning (12110): Net "datapath:dp|SrcA[31]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[30]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[29]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[28]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[27]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[26]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[25]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[24]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[23]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[22]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[21]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[20]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[19]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[18]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[17]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
-    Warning (12110): Net "datapath:dp|SrcA[16]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/datapath.sv Line: 23
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "ReadData[31]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/filtros_clasicos.sv Line: 21
     Warning (12110): Net "ReadData[30]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/filtros_clasicos.sv Line: 21
@@ -786,11 +747,11 @@ Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "ReadData[8]" is missing source, defaulting to GND File: C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/filtros_clasicos.sv Line: 21
 Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/output_files/filtros_clasicos.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 105 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Wed Nov  6 23:21:03 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 73 warnings
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Tue Nov 19 16:25:41 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
 
 
 +--------------------------------------------+

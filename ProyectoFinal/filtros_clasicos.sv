@@ -15,7 +15,7 @@ logic [31:0]WriteData;
 logic [1:0] RegSrc;
 logic [1:0] ImmSrc;
 logic [1:0] ALUControl;
-logic [15:0] ALUResult;
+logic [17:0] ALUResult;
 logic [31:0] pc;
 logic [31:0] instr;
 logic [31:0] ReadData;
@@ -71,6 +71,16 @@ memory_unit mmem(
 	.q_a(ReadData),
 	.q_b(q_b)
 	);
+	
+/*data_memory mmem(
+	.clk(clk),
+	.en_write(MemWrite),           
+   .A(ALUResult),           
+   .B(address),          
+   .writedata(WriteData),            
+   .readdata1(ReadData),            
+   .readdata2(q_b)  
+);*/
 
 	
 	
