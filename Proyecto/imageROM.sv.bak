@@ -1,0 +1,16 @@
+module imageROM(
+	input [18:0] address, // Calculado como y * ancho + x
+	output reg [23:0] data // Salida de datos RGB
+);
+
+	// Aquí cargas la imagen en forma de hexadecimales
+	reg [23:0] image_mem [0:307199]; // Para una imagen de 640x480
+
+	initial begin
+		$readmemh("imagen.hex", image_mem); // Carga la imagen desde un archivo .hex
+	end
+
+	always @* begin
+		data = image_mem[address];
+	end
+endmodule
