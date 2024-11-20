@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1732055181
+Z2 !s110 1732144748
 !i10b 1
 !s100 D51gZkZ>Fo0Nc8=zE7im]2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1732055181.000000
+Z6 !s108 1732144748.000000
 !s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/adder.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z8 !s92 -sv -work work +incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodrig
 Z9 tCvgOpt 0
 vALU
 R1
-Z10 !s110 1732055180
+Z10 !s110 1732144747
 !i10b 1
 !s100 0c>XiLWED5NW[<?LF3Zhz2
 R3
@@ -54,7 +54,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1732055180.000000
+Z11 !s108 1732144747.000000
 !s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/ALU.sv|
 !i113 1
@@ -90,7 +90,7 @@ R8
 R9
 vcondlogic_unit
 R1
-Z12 !s110 1732055179
+R10
 !i10b 1
 !s100 RdP8:Ug3Z7DEzK2fO6W?X0
 R3
@@ -107,7 +107,7 @@ R5
 r1
 !s85 0
 31
-Z13 !s108 1732055179.000000
+R11
 !s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/condlogic_unit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/condlogic_unit.sv|
 !i113 1
@@ -168,7 +168,7 @@ R8
 R9
 vdecoder_unit
 R1
-R12
+Z12 !s110 1732144746
 !i10b 1
 !s100 lL9LPKQTQ3ZDQB;h9m0SA2
 R3
@@ -185,7 +185,7 @@ R5
 r1
 !s85 0
 31
-R13
+Z13 !s108 1732144746.000000
 !s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/decoder_unit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/decoder_unit.sv|
 !i113 1
@@ -263,7 +263,7 @@ R5
 r1
 !s85 0
 31
-R11
+R6
 !s107 C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/flopenr.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal|C:/Users/grero/OneDrive/Escritorio/taller/JRodriguez-KRuiz-GQuintero-digital-design-lab-2024/ProyectoFinal/flopenr.sv|
 !i113 1
@@ -272,7 +272,7 @@ R8
 R9
 vflopr
 R1
-R10
+R2
 !i10b 1
 !s100 MV;Gc27QX^FPW6OdN8mz:3
 R3
